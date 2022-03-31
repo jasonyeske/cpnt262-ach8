@@ -17,6 +17,7 @@ async function fetchCharacters() {
     const data = await res;
     characters.value = await data.data
 
+
     console.log(data)
   } catch (err) {
     throw new Error('Async fetch error: ' + err)
